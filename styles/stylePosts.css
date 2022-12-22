@@ -1,0 +1,176 @@
+:root{
+  --backColor:#706efc;
+  --navBarColor:#65c6ff;
+  /* --navBarColor:#a9dfef; */
+  --pageColor:#b8c4e4;
+}
+
+
+/* para chamar variavel utilizar var(--backcolor) */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+#navbar{
+  display: flex;
+  background-color: var(--navBarColor);
+  padding: 10px;
+  max-width: 100vw;
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+#logo{
+  max-width: max-content;
+  background-color: var(--navBarColor);
+  max-width: 100%;
+  
+}
+
+#logoImg{
+  max-width: 5rem;
+  height: auto;
+  border-radius: 50px;
+}
+
+#name{
+  text-decoration: none;
+  color: black;
+  font-size: 50px;  
+  font-family: 'Caveat', cursive;
+  background-color: transparent;
+}
+
+.btn{
+  background-color: var(--navBarColor);
+  border: 2px solid var(--backColor);
+  border-radius: 5px;
+}
+.btn:hover{
+  background-color: #706efc;
+  transition: 1s;
+}
+
+#offcanvasWhatMe{
+  background-color: var(--backColor);
+}
+
+#imgWhatMe{
+  max-width: 100%;
+}
+
+#btnAdmin{
+  text-align: end;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: #838a9e;
+  font-size: 10px;
+}
+
+#namePage{
+  padding-top: 20px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #706efc;
+}
+
+#titlePage{
+  margin: 0;
+}
+
+
+
+section{
+  background-color: var(--backColor);
+  max-width: 100vw;
+  height: 100vh;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  margin: 0;
+}
+
+
+
+.page{
+  max-width: 100vw;  
+  max-height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  background-color: var(--pageColor);
+  padding: 20px;
+  
+}
+
+.imgPost{
+  max-width: 500px;
+  max-height: 500px;
+  padding: 50px;
+
+}
+
+#footer{
+  display: flex;
+  background-color: var(--navBarColor);
+  padding: 10px;
+  max-width: 100vw;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+}
+
+#instagramImg{
+  width: 50px;
+  padding: 10px;
+}
+
+#insta{
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+}
+
+#copyright{
+  text-align: center;
+  background-color: var(--backColor);
+  padding: 5px;
+  margin: 0;
+  font-size: 10px;
+}
+
+@media(max-width:470px){
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    
+  }
+}
+@media(max-width:350px){
+  #logoImg{
+    width: 60px;
+  }
+  #name{
+    font-size: 40px;
+  }
+}
+
